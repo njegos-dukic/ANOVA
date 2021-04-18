@@ -1,0 +1,23 @@
+#main-container
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#right-half, #middle-half
+{
+  margin: 20px;
+}
+
+#table-container
+{
+    width: 600px;
+    overflow-x: auto;
+    overflow-y: auto;
+    white-space: nowrap;
+}
+
+#measurement-tag
+{
+  width: 100px;
+}

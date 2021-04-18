@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>ANOVA</title>
+        <link rel="stylesheet" href="anova.css">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/jstat@latest/dist/jstat.min.js"></script>
+        <script src="anova.js"></script>
+        <h3>[PRS] ANOVA - 95% POVJERENJA </h3>
+        <div id="main-container">
+            <div id="left-half">
+                <div id="input-container">      
+                    <div id="alternatives">
+                        Broj alternativa: <input id="alternatives-input" pattern="[0-9]{1,2}"/>
+                    </div>
+
+                    <div id="observation">
+                        Broj mjerenja: <input id="observation-input" pattern="[0-9]{1,2}"/>
+                    </div>
+
+                    <button id="confirmation-button" onClick="createTable()">Potvrdi</button>
+                    <button id="reset-button" onClick="resetForm()">Resetuj</button>
+
+                    <div id="warning"></div>
+                </div>
+
+                <div id="data-container">
+                    <div id="table-container">
+                        <table id="table"></table>
+                        <div id="means">
+                        
+                        </div>
+                    </div>
+                    
+                    <div id="calculate-button"></div>
+                </div>
+            </div>
+
+            <div id="middle-half"></div>
+            <div id="right-half"></div>
+
+        </div>
+
+    </body>
+</html>
