@@ -163,11 +163,6 @@ let calculate = async () =>
 
   document.getElementById("right-half").innerHTML += `<h4><u>KONTRASTI</u></h4>`
   
-
-  console.log("Alpha1 = " + alphas[0])
-  console.log("Alpha2 = " + alphas[1])
-  console.log("Alpha3 = " + alphas[2])
-
   for (let i = 1; i <= numberOfAlternatives; i++)
     for (let j = i - 0 + 1; j <= numberOfAlternatives; j++)
     {
